@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Корина</title>
+</head>
+<body>
+     {% extends "fourth_task\menu.html" %}
+    {% block title %}Home - {{ block.super }}{% endblock %}
+    {% block pagename %}
+        <h1>Корзина</h1>
+    {% endblock %}
+
+     {% block menu %}
+        {{ block.super }}
+    {% endblock %}
+
+    {% block content %}
+            <h1>Ваша корзина пуста</h1>
+
+
+    {% endblock %}
+
+</body>
+</html>
+
+

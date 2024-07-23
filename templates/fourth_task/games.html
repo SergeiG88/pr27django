@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+</head>
+<body>
+     {% extends "fourth_task\menu.html" %}
+    {% block title %}Home - {{ block.super }}{% endblock %}
+    {% block pagename %}
+         <h1>Магазин</h1>
+    {% endblock %}
+
+     {% block menu %}
+        {{ block.super }}
+    {% endblock %}
+
+    {% block content %}
+                    {% for i in list %}
+    <li>{{ i }} <button>купить</button></li>
+    {% endfor%}
+
+    {% endblock %}
+
+</body>
+</html>
+
+
+
+
+
